@@ -1,0 +1,12 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "A Restaurant Page done as part of The Odin Project curriculum. Its goal is to practice using Webpack and dynamic DOM element creation via JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
