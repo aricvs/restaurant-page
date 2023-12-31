@@ -1,5 +1,28 @@
+:root {
+  --text-color: rgb(255, 184, 53);
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
 body {
-  color: rgb(255, 184, 53);
   background-color: black;
+  color: var(--text-color);
   font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+#content {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid;
+  padding: 2rem;
 }
