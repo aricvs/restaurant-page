@@ -2,9 +2,12 @@ import Bbq from "./img/bbq.jpg";
 
 const tab1 = () => {
   const mainContent = document.querySelector("#content");
+  const tabDiv = document.createElement("div");
   const image = document.createElement("img");
   const header = document.createElement("h1");
   const para = document.createElement("p");
+
+  tabDiv.classList.add("tab-div");
 
   image.src = Bbq;
   image.alt = "meats on a grill";
@@ -20,9 +23,10 @@ const tab1 = () => {
   occaecat cupidatat non proident, sunt in culpa qui officia deserunt
   mollit anim id est laborum.`;
 
-  mainContent.appendChild(image);
-  mainContent.appendChild(header);
-  mainContent.appendChild(para);
+  tabDiv.appendChild(image);
+  tabDiv.appendChild(header);
+  tabDiv.appendChild(para);
+  mainContent.appendChild(tabDiv);
 };
 
 export { tab1 };
