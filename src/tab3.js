@@ -11,8 +11,6 @@ const tab3 = () => {
 
   tabDiv.appendChild(para);
   mainContent.appendChild(tabDiv);
-
-  console.log("ronaldo");
 };
 
 export { tab3 };
