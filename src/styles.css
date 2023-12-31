@@ -14,8 +14,25 @@ body {
   background-color: black;
   color: var(--text-color);
   font-family: sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2.5rem 1fr;
+  max-width: 50%;
+}
+
+.tab-selector {
+  height: 2rem;
+  width: 4rem;
+  border: 2px solid;
   display: flex;
+  align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: white;
+  color: red;
 }
 
 #content {
@@ -24,7 +41,7 @@ body {
   align-items: center;
   border: 2px solid;
   padding: 2rem;
-  max-width: 50%;
+  grid-column: 1 / -1;
 }
 
 .tab-div {
