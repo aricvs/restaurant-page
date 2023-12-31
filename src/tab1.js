@@ -11,7 +11,6 @@ const tab1 = () => {
 
   image.src = Bbq;
   image.alt = "meats on a grill";
-  image.width = "300";
 
   header.textContent = "The best barbecue!";
 

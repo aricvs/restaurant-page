@@ -4,7 +4,7 @@ import { tab2 } from "./tab2.js";
 import { tab3 } from "./tab3.js";
 
 const addTabs = () => {
-  const documentBody = document.getElementsByTagName("BODY")[0];
+  const docBody = document.body;
   const tabOne = document.createElement("div");
   const tabTwo = document.createElement("div");
   const tabThree = document.createElement("div");
@@ -17,9 +17,9 @@ const addTabs = () => {
   tabTwo.textContent = "About";
   tabThree.textContent = "Contact";
 
-  documentBody.appendChild(tabOne);
-  documentBody.appendChild(tabTwo);
-  documentBody.appendChild(tabThree);
+  docBody.prepend(tabThree);
+  docBody.prepend(tabTwo);
+  docBody.prepend(tabOne);
 };
 
 const switchTab1 = () => {
